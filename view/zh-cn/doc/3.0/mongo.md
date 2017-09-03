@@ -200,8 +200,8 @@ module.exports = class extends think.Mongo {
 ```js
 module.exports = class extends think.Mongo {
   async getList() {
-    // 如果含有子目录，那么这里带上子目录，如： this.mongo('front/article')
-    const article = this.mongo('article'); 
+    // 如果含有子目录，那么这里带上子目录，如： this.model('front/article')
+    const article = this.model('article'); 
     const data = await article.select();
     ...
   }
